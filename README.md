@@ -1,5 +1,17 @@
 # dynamic-readme-generator
 
+#Description
+
+#Installation
+
+#Usage
+
+#Contributing
+
+#Screenshots
+
+#License
+
 <!-- This is a Dynamic Proffesional Readme file generator using the inquirer package
 
 GIVEN a command-line application that accepts user input
