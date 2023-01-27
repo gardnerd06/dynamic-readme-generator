@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 console.log("you are running my generator!");
+// const write = require("node:fs");
 // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -109,6 +110,7 @@ inquirer
       // Use user feedback for... whatever!!
     }
     console.log(toc);
+    // filehandle.writeFile("ReadMe.md", toc);
   })
   .catch((error) => {
     if (error.isTtyError) {
