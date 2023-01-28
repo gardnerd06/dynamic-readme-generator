@@ -1,27 +1,27 @@
 # dynamic-readme-generator
 
-#Description
+##Description
 
 This project was given during the 9th week of my bootcamp. The goal of this project is to create a project using Node.js and the inquirer package in order to generate a readme file using the users input.
 
-#Installation
+##Installation
 
 Code for this project can be found at : https://github.com/gardnerd06/dynamic-readme-generator
 
-#Usage
+##Usage
 
 The purpose of this project is to dynamically create a Readme file from the users input.
 
-#Contributing
+##Contributing
 
 Credit for this project is given to:
 
 Node.js - https://nodejs.org/en/
 Inquirer Package - https://www.npmjs.com/package/inquirer
 
-#Screenshots
+##Screenshots
 
-#License
+##License
 
 The MIT License was used for this project:
 
