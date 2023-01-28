@@ -94,7 +94,10 @@ const questions = [
 ];
 // Title, Description, Installation, Usage, Contributing, and Tests
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  const fs = require("fs/promises");
+  fs.writeFile(fileName, data);
+}
 
 // Created a function to initialize app
 function init(inquirer) {}
@@ -103,14 +106,47 @@ inquirer
   .prompt(questions)
   .then((answers) => {
     console.log(answers);
-    const toc = [];
-    for (let i = 0; i < questions.length; i++) {
-      console.log(questions[i].name);
-      toc.push(questions[i].name);
-      // Use user feedback for... whatever!!
-    }
-    console.log(toc);
-    // filehandle.writeFile("ReadMe.md", toc);
+    let title = answers.Title;
+    let desc = answers.Description;
+    let inst = answers.Installation;
+    let usage = answers.Usage;
+    let contribute = answers.Contributing;
+    let test = answers.Tests;
+    let feat = answers.Features;
+    let badg = answers.Badges;
+    let license = answers.License;
+
+    const response = `# Title
+    ${title}
+    
+    ### Description
+    ${desc}
+
+    ## Installation
+    ${inst}
+
+    ## Usage
+    ${usage}
+
+    ## Contributing
+    ${contribute}
+
+    ## Tests
+    ${test}
+
+    ## Features
+    ${feat}
+
+    ## Badges
+    ${badg}
+
+    ## License
+    ${license}
+    `;
+
+    // Use user feedback for... whatever!!
+    console.log(license);
+    writeToFile("ReadMe.md", response);
   })
   .catch((error) => {
     if (error.isTtyError) {
@@ -123,3 +159,8 @@ inquirer
 
 // Function call to initialize app
 init(inquirer);
+
+// const data = "you typed something";
+
+// const fs = require("fs/promises");
+// fs.writeFile("index.html", data);
