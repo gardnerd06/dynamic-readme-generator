@@ -22,6 +22,7 @@ Inquirer Package - https://www.npmjs.com/package/inquirer
 ##Screenshots
 
 ##License
+![License](https://img.shields.io/badge/License-Boost_Software_License_1.0-orange)
 
 The MIT License was used for this project:
 
