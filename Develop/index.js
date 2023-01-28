@@ -118,6 +118,7 @@ inquirer
     let feat = answers.Features;
     let badg = answers.Badges;
     let license = answers.License;
+    let modlicense = license.split(" ").join("_");
     // (license) => {
     //   switch (license) {
     //     case "MIT":
@@ -195,7 +196,7 @@ inquirer
 
     ## Badges
     ${badg}
-    ![${license}](https://img.shields.io/badge/License-${license}-orange)
+    ![License](https://img.shields.io/badge/License-${modlicense}-orange)
 
     ## License
     ${license}
