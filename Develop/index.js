@@ -82,13 +82,16 @@ const questions = [
     message: "What type of license will you use?",
     choices: [
       "MIT",
-      "Apache",
-      "Boost",
+      "Apache License 2.0",
+      "Boost Software License 1.0",
       "Eclipse",
       "The Hippocratic",
       "IBM",
-      "ISC",
-      "Mozilla",
+      "ISC License",
+      "Mozilla Public License 2.0",
+      "GNU GPLv2",
+      "GNU GPLv3",
+      "The Unlicense",
     ],
   },
 ];
@@ -115,9 +118,62 @@ inquirer
     let feat = answers.Features;
     let badg = answers.Badges;
     let license = answers.License;
+    // (license) => {
+    //   switch (license) {
+    //     case "MIT":
+    //       //Statements executed when the
+    //       //result of expression matches value1
+    //       break;
+    //     case "Apache License 2.0":
+    //       //Statements executed when the
+    //       //result of expression matches value2
+    //       break;
 
-    const response = `# Title
-    ${title}
+    //     case "Boost Software License 1.0":
+    //       //Statements executed when the
+    //       //result of expression matches valueN
+    //       break;
+    //     case "Eclipse":
+    //       //Statements executed when the
+    //       //result of expression matches valueN
+    //       break;
+    //     case "The Hippocratic":
+    //       //Statements executed when the
+    //       //result of expression matches valueN
+    //       break;
+    //     case "IBM":
+    //       //Statements executed when the
+    //       //result of expression matches valueN
+    //       break;
+    //     case "ISC License":
+    //       //Statements executed when the
+    //       //result of expression matches valueN
+    //       break;
+    //     case "Mozilla Public License 2.0":
+    //       //Statements executed when the
+    //       //result of expression matches valueN
+    //       break;
+    //     case "GNU GPLv2":
+    //       //Statements executed when the
+    //       //result of expression matches valueN
+    //       break;
+    //     case "GNU GPLv3":
+    //       //Statements executed when the
+    //       //result of expression matches valueN
+    //       break;
+    //     case "The Unlicense":
+    //       //Statements executed when the
+    //       //result of expression matches valueN
+    //       break;
+
+    //     default:
+    //       //Statements executed when none of
+    //       //the values match the value of the expression
+    //       break;
+    //   }
+    // };
+    const response = `# ${title}
+    
     
     ### Description
     ${desc}
@@ -139,6 +195,7 @@ inquirer
 
     ## Badges
     ${badg}
+    ![${license}](https://img.shields.io/badge/License-${license}-orange)
 
     ## License
     ${license}

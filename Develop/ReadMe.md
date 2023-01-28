@@ -1,27 +1,28 @@
-# Title
-    Mad Fidget webpage
+# Dynamic Readme
+    
     
     ### Description
-    The purpose of Mad fidgets is to bring toys to boys and girls around the world and to make them happy like Santa clause during the christmas holiday season. When the children smile it will make Madison's heart go super happyy
+    This project was created to dynamically create a readme for the user.    After they submit their information the user is then presented with a readme that contains the information they submitted. Then a separate file is created to store the info for the user.
 
     ## Installation
-    On the interntet
+    WWw.github.com
 
     ## Usage
-    To make children and Madison happy
+    To dynamically create a readme
 
     ## Contributing
-    Just me and Madison jay Gardner
+    Just me
 
     ## Tests
-    none
+    i created test
 
     ## Features
-    This project will be bus
+    this project features badges for the user
 
     ## Badges
-    just pokemon badges
+    yes
+    ![Apache License 2.0](https://img.shields.io/badge/License-Apache License 2.0-orange)
 
     ## License
-    The Hippocratic
+    Apache License 2.0
     
