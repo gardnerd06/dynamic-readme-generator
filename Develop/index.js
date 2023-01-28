@@ -1,7 +1,3 @@
-// TODO: Include packages needed for this application
-console.log("you are running my generator!");
-// const write = require("node:fs");
-// TODO: Create an array of questions for user input
 const questions = [
   {
     type: "input",
@@ -96,7 +92,6 @@ const questions = [
   },
 ];
 // Title, Description, Installation, Usage, Contributing, and Tests
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   const fs = require("fs/promises");
   fs.writeFile(fileName, data);
@@ -119,60 +114,7 @@ inquirer
     let badg = answers.Badges;
     let license = answers.License;
     let modlicense = license.split(" ").join("_");
-    // (license) => {
-    //   switch (license) {
-    //     case "MIT":
-    //       //Statements executed when the
-    //       //result of expression matches value1
-    //       break;
-    //     case "Apache License 2.0":
-    //       //Statements executed when the
-    //       //result of expression matches value2
-    //       break;
 
-    //     case "Boost Software License 1.0":
-    //       //Statements executed when the
-    //       //result of expression matches valueN
-    //       break;
-    //     case "Eclipse":
-    //       //Statements executed when the
-    //       //result of expression matches valueN
-    //       break;
-    //     case "The Hippocratic":
-    //       //Statements executed when the
-    //       //result of expression matches valueN
-    //       break;
-    //     case "IBM":
-    //       //Statements executed when the
-    //       //result of expression matches valueN
-    //       break;
-    //     case "ISC License":
-    //       //Statements executed when the
-    //       //result of expression matches valueN
-    //       break;
-    //     case "Mozilla Public License 2.0":
-    //       //Statements executed when the
-    //       //result of expression matches valueN
-    //       break;
-    //     case "GNU GPLv2":
-    //       //Statements executed when the
-    //       //result of expression matches valueN
-    //       break;
-    //     case "GNU GPLv3":
-    //       //Statements executed when the
-    //       //result of expression matches valueN
-    //       break;
-    //     case "The Unlicense":
-    //       //Statements executed when the
-    //       //result of expression matches valueN
-    //       break;
-
-    //     default:
-    //       //Statements executed when none of
-    //       //the values match the value of the expression
-    //       break;
-    //   }
-    // };
     const response = `# ${title}
     
     
@@ -202,7 +144,6 @@ inquirer
     ${license}
     `;
 
-    // Use user feedback for... whatever!!
     console.log(license);
     writeToFile("ReadMe.md", response);
   })
@@ -217,8 +158,3 @@ inquirer
 
 // Function call to initialize app
 init(inquirer);
-
-// const data = "you typed something";
-
-// const fs = require("fs/promises");
-// fs.writeFile("index.html", data);

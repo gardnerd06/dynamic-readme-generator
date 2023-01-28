@@ -1,6 +1,5 @@
 # dklfjasdf
-    
-    
+
     ### Description
     asdfsdffadfasdklfjasdkl fhosjdhfodshfj sdhf ahsdf jlkdh sfjashdf askjd fjahs dfjkhdjfha sdfhjkasdhfjasdhf asd fsadhfajskdhf aksdh fsadh fjadsh fjhasjdhfjashdfjaksdhf asjkfh asdfh jkasdhf kja sdfjkhas dfsjkadhfkj shdfahsdfkjashdfjhasdf
 
@@ -25,4 +24,3 @@
 
     ## License
     Boost Software License 1.0
-    
