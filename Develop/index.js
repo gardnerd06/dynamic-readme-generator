@@ -1,3 +1,37 @@
+const mit = `MIT License
+
+Copyright (c) [year] [fullname]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+`;
+const gn3 = `                    GNU AFFERO GENERAL PUBLIC LICENSE
+Version 3, 19 November 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
+`;
+
+const moz = `Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work. `;
+const apach = `A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.`;
+const boo = `A simple permissive license only requiring preservation of copyright and license notices for source (and not binary) distribution. Licensed works, modifications, and larger works may be distributed under different terms and without source code.`;
+const un = `A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code.`;
 const questions = [
   {
     type: "input",
@@ -80,14 +114,9 @@ const questions = [
       "MIT",
       "Apache License 2.0",
       "Boost Software License 1.0",
-      "Eclipse",
-      "The Hippocratic",
-      "IBM",
-      "ISC License",
-      "Mozilla Public License 2.0",
-      "GNU GPLv2",
-      "GNU GPLv3",
       "The Unlicense",
+      "Mozilla Public License 2.0",
+      "GNU GPLv3",
     ],
   },
 ];
@@ -114,10 +143,31 @@ inquirer
     let badg = answers.Badges;
     let license = answers.License;
     let modlicense = license.split(" ").join("_");
-
+    // const preview = "";
+    // switch (license) {
+    //   case "MIT":
+    //     preview += mit;
+    //     break;
+    //   case "Apache License 2.0":
+    //     preview += apach;
+    //     break;
+    //   case "Boost Software License 1.0":
+    //     preview += boo;
+    //     break;
+    //   case "The Unlicense":
+    //     preview += un;
+    //     break;
+    //   case "Mozilla Public License 2.0":
+    //     preview += moz;
+    //     break;
+    //   case "GNU GPLv3":
+    //     preview += gn3;
+    //     break;
+    // }
+    // console.log(preview);
     const response = `# ${title}
     
-    
+    ![License](https://img.shields.io/badge/License-${modlicense}-orange)
     ### Description
     ${desc}
 
@@ -138,8 +188,8 @@ inquirer
 
     ## Badges
     ${badg}
-    ![License](https://img.shields.io/badge/License-${modlicense}-orange)
-
+    
+    
     ## License
     ${license}
     `;
