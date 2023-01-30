@@ -119,6 +119,24 @@ const questions = [
       "GNU GPLv3",
     ],
   },
+  {
+    type: "input",
+    name: "Username",
+    message: "What is your Github username?",
+    validate(value) {
+      if (value !== "") return true;
+      else console.log("You must enter valid badges!");
+    },
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "What is your email address?",
+    validate(value) {
+      if (value !== "") return true;
+      else console.log("You must enter valid badges!");
+    },
+  },
 ];
 // Title, Description, Installation, Usage, Contributing, and Tests
 function writeToFile(fileName, data) {
@@ -142,6 +160,8 @@ inquirer
     let feat = answers.Features;
     let badg = answers.Badges;
     let license = answers.License;
+    let user = answers.Username;
+    let email = answers.email;
     let modlicense = license.split(" ").join("_");
     // const preview = "";
     // switch (license) {
@@ -168,29 +188,42 @@ inquirer
     const response = `# ${title}
     
     ![License](https://img.shields.io/badge/License-${modlicense}-orange)
-    ### Description
+    ## Description
     ${desc}
+    
+    ### Table of Content
+    -Description
+    -[Installation](#installation)
+    -[Usage](#usage)
+    -[Contributions](#contributions)
+    -[Tests](#contributions)
+    -Features
+    -Badges
+    -[License](#license)
 
-    ## Installation
+    ### Installation
     ${inst}
 
-    ## Usage
+    ### Usage
     ${usage}
 
-    ## Contributing
+    ### Contributing
     ${contribute}
 
-    ## Tests
+    #### Tests
     ${test}
 
-    ## Features
+    #### Features
     ${feat}
 
-    ## Badges
+    #### Badges
     ${badg}
     
+    #### How to Contribute
+    ${email}
+    [myGithub]https://github.com/${user}
     
-    ## License
+    ##### License
     ${license}
     `;
 
