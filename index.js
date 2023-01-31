@@ -193,7 +193,7 @@ inquirer
 
 ${desc}
 
-### Table of Content
+## Table of Content
 
 - [Description](#description)
 - [Installation](#installation)
@@ -204,37 +204,37 @@ ${desc}
 - [Badges](#badges)
 - [License](#license)
 
-### Installation
+## Installation
 
 ${inst}
 
-### Usage
+## Usage
 
 ${usage}
 
-### Contributions
+## Contributions
 
 ${contribute}
 
-#### Tests
+## Tests
 
 ${test}
 
-#### Features
+## Features
 
 ${feat}
 
-#### Badges
+## Badges
 
 ${badg}
 
-#### How to Contribute
+## How to Contribute
 
-${email}
+If you'd like to contribute, here's how to reach me with additional questions [email]<${email}>!
 
 [myGithub]<https://github.com/${user}>
 
-##### License
+## License
 
 ${license}
 `;

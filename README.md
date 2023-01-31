@@ -1,67 +1,52 @@
-# dynamic-readme-generator
+# Dynamic Readme Generator
+    
+  ![License](https://img.shields.io/badge/License-Apache_License_2.0-orange)
 
-##Description
+## Description
 
-This project was given during the 9th week of my bootcamp. The goal of this project is to create a project using Node.js and the inquirer package in order to generate a readme file using the users input.
+The purpose of this project is to allow a user to dynamically generate a readme file by answering prompt and place the recorded data into a proffesional readme file. Each file is generated in markdown and is ready to be published to the user's repository 
 
-##Installation
+### Table of Content
 
-Code for this project can be found at : https://github.com/gardnerd06/dynamic-readme-generator
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributions](#contributions)
+- [Tests](#tests)
+- [Features](#features)
+- [Badges](#badges)
+- [License](#license)
 
-##Usage
+### Installation
 
-The purpose of this project is to dynamically create a Readme file from the users input.
+Github/gardnerd06
 
-##Contributing
+### Usage
 
-Credit for this project is given to:
+This project was created for the sole purpose of letting a user generate a readme file
 
-Node.js - https://nodejs.org/en/
-Inquirer Package - https://www.npmjs.com/package/inquirer
+### Contributions
 
-##Screenshots
+Daniel Gardner
 
-##License
-![License](https://img.shields.io/badge/License-Boost_Software_License_1.0-orange)
+#### Tests
 
-The MIT License was used for this project:
+User Input
 
-MIT License
+#### Features
 
-Copyright (c) 2023 Daniel Gardner
+This project runs in node Js and can generate Mardown and license badges
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+#### Badges
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Yes
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+#### How to Contribute
 
-<!-- This is a Dynamic Proffesional Readme file generator using the inquirer package
+If you'd like to contribute, here's how to reach me with additional questions gardnerd06@gmail.com!
 
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README -->
+[myGithub]<https://github.com/gardnerd06>
+
+##### License
+
+Apache License 2.0
