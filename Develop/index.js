@@ -187,45 +187,57 @@ inquirer
     // console.log(preview);
     const response = `# ${title}
     
-    ![License](https://img.shields.io/badge/License-${modlicense}-orange)
-    ## Description
-    ${desc}
-    
-    ### Table of Content
-    -Description
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[Contributions](#contributions)
-    -[Tests](#contributions)
-    -Features
-    -Badges
-    -[License](#license)
+  ![License](https://img.shields.io/badge/License-${modlicense}-orange)
 
-    ### Installation
-    ${inst}
+## Description
 
-    ### Usage
-    ${usage}
+${desc}
 
-    ### Contributing
-    ${contribute}
+### Table of Content
 
-    #### Tests
-    ${test}
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributions](#contributions)
+- [Tests](#tests)
+- [Features](#features)
+- [Badges](#badges)
+- [License](#license)
 
-    #### Features
-    ${feat}
+### Installation
 
-    #### Badges
-    ${badg}
-    
-    #### How to Contribute
-    ${email}
-    [myGithub]https://github.com/${user}
-    
-    ##### License
-    ${license}
-    `;
+${inst}
+
+### Usage
+
+${usage}
+
+### Contributions
+
+${contribute}
+
+#### Tests
+
+${test}
+
+#### Features
+
+${feat}
+
+#### Badges
+
+${badg}
+
+#### How to Contribute
+
+${email}
+
+[myGithub]<https://github.com/${user}>
+
+##### License
+
+${license}
+`;
 
     console.log(license);
     writeToFile("ReadMe.md", response);
