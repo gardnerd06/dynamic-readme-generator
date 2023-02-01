@@ -1,4 +1,4 @@
-Dynamic Readme Generator
+#Dynamic Readme Generator
 License
 
 Description
@@ -28,8 +28,11 @@ Input from the user is used to test app.
 Features
 This file can generate a file in full markdown
 
-Badges
-yes from Shield.io
+##Screenshots
+
+![Screenshot (21)](https://user-images.githubusercontent.com/115792714/216185572-c7257876-c0d4-4cbd-be44-0cef8e8c3009.png)
+
+![Screenshot (20)](https://user-images.githubusercontent.com/115792714/216185584-e00199a9-65b4-4750-b4d3-637b5ace5e01.png)
 
 How to Contribute
 If you'd like to contribute, here's how to reach me with additional questions [email]gardnerd06@gmail.com!
