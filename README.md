@@ -1,12 +1,12 @@
 # Dynamic Readme Generator
-    
-  ![License](https://img.shields.io/badge/License-Apache_License_2.0-orange)
+
+![License](https://img.shields.io/badge/License-MIT-orange)
 
 ## Description
 
-The purpose of this project is to allow a user to dynamically generate a readme file by answering prompt and place the recorded data into a proffesional readme file. Each file is generated in markdown and is ready to be published to the user's repository 
+The purpose of this project is to create a readme generator for the end user to dynamically create a proffesional readme after the users answers a few prompt. Each iteration will create a readme file that the user can use right away and upload to their repo.
 
-### Table of Content
+## Table of Content
 
 - [Description](#description)
 - [Installation](#installation)
@@ -17,36 +17,58 @@ The purpose of this project is to allow a user to dynamically generate a readme 
 - [Badges](#badges)
 - [License](#license)
 
-### Installation
+## Installation
 
-Github/gardnerd06
+Github.com/gardnerd06
 
-### Usage
+## Usage
 
-This project was created for the sole purpose of letting a user generate a readme file
+This project can be used to dynamically create a readme file for a user
 
-### Contributions
+## Contributions
 
 Daniel Gardner
 
-#### Tests
+## Tests
 
-User Input
+Input user data
 
-#### Features
+## Features
 
-This project runs in node Js and can generate Mardown and license badges
+The generator takes the user's input and creates a file in full markdown.
 
-#### Badges
+## Badges
 
-Yes
+Yes from shield.io
 
-#### How to Contribute
+## How to Contribute
 
-If you'd like to contribute, here's how to reach me with additional questions gardnerd06@gmail.com!
+If you'd like to contribute, here's how to reach me with additional questions [email]<gardnerd06@gmail.com>!
 
 [myGithub]<https://github.com/gardnerd06>
 
-##### License
+## License
 
-Apache License 2.0
+MIT
+
+MIT License
+
+Copyright (c) [year] [fullname]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

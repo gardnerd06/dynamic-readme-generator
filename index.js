@@ -163,30 +163,28 @@ inquirer
     let user = answers.Username;
     let email = answers.email;
     let modlicense = license.split(" ").join("_");
-    // const preview = "";
-    // switch (license) {
-    //   case "MIT":
-    //     preview += mit;
-    //     break;
-    //   case "Apache License 2.0":
-    //     preview += apach;
-    //     break;
-    //   case "Boost Software License 1.0":
-    //     preview += boo;
-    //     break;
-    //   case "The Unlicense":
-    //     preview += un;
-    //     break;
-    //   case "Mozilla Public License 2.0":
-    //     preview += moz;
-    //     break;
-    //   case "GNU GPLv3":
-    //     preview += gn3;
-    //     break;
-    // }
-    // console.log(preview);
+    const lisdesc = ["hello"];
+    function preview(license) {
+      switch (license) {
+        case "MIT":
+          return mit;
+        case "Apache License 2.0":
+          return apach;
+        case "Boost Software License 1.0":
+          return boo;
+        case "The Unlicense":
+          return un;
+        case "Mozilla Public License 2.0":
+          return moz;
+        case "GNU GPLv3":
+          return gn3;
+      }
+    }
+    const notice = preview(license);
+    console.log(notice);
+
     const response = `# ${title}
-    
+
   ![License](https://img.shields.io/badge/License-${modlicense}-orange)
 
 ## Description
@@ -237,6 +235,8 @@ If you'd like to contribute, here's how to reach me with additional questions [e
 ## License
 
 ${license}
+
+${notice}
 `;
 
     console.log(license);
